@@ -5,7 +5,8 @@
 
     <TextView
     android:id="@+id/hello_text"
-    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
     android:text="Hello"
     android:background="#3fd1dc"
     android:layout_width="wrap_content"
@@ -13,21 +14,59 @@
     <TextView
         android:id="@+id/left_text"
         android:layout_toStartOf="@+id/hello_text"
-        android:layout_below="@+id/hello_text"
         android:text="왼쪽"
-        android:background="#bd3fdc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/right_text"
+        android:layout_toEndOf="@+id/hello_text"
+        android:text="오른쪽"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/android_text"
         android:layout_alignParentBottom="true"
         android:text="Android"
         android:background="#afd45f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
-        android:layout_centerInParent="true"
+        android:id="@+id/a_above"
+        android:layout_above="@+id/android_text"
+        android:text="위쪽"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/a_right"
+
+        android:layout_toEndOf="@+id/android_text"
+        android:layout_alignParentBottom="true"
+        android:text="오른쪽"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/world_text"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:text="World"
         android:background="#fa6b47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/w_above"
+        android:layout_alignRight="@+id/world_text"
+        android:layout_above="@+id/world_text"
+        android:text="위쪽"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/w_left"
+        android:layout_toStartOf="@+id/world_text"
+        android:layout_alignParentBottom="true"
+        android:text="왼쪽"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
