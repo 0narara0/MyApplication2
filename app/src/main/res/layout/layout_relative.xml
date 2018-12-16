@@ -4,9 +4,18 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_alignParentEnd="true"
-        android:text="Hello"
-        android:background="#3fd1dc"
+    android:id="@+id/hello_text"
+    android:layout_alignParentEnd="true"
+    android:text="Hello"
+    android:background="#3fd1dc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_toStartOf="@+id/hello_text"
+        android:layout_below="@+id/hello_text"
+        android:text="왼쪽"
+        android:background="#bd3fdc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
@@ -16,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     <TextView
+        android:layout_centerInParent="true"
         android:text="World"
         android:background="#fa6b47"
         android:layout_width="wrap_content"
